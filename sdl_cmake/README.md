@@ -54,3 +54,21 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 ${SDL2_Flags}")
 target_link_libraries(project ${SDL2_Libs})
 include_directories(${SDL2_Includes} ${SDL2_GFX_INCLUDE_DIR})
 ```
+
+if you got this error:
+```
+undefined reference to WinMain
+```
+put this code at the top of your main function:
+```
+#ifdef main
+# undef main
+#endif /* main */
+```
+and define your main like this:
+```
+int main(int argc, char** argv){
+...
+return 0;
+}
+```
