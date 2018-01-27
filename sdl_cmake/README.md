@@ -1,4 +1,4 @@
-# Prerequisites
+م# Prerequisites
 ## Linux
 run this command in terminal:
 ```
@@ -30,7 +30,7 @@ ADD_DEFINITIONS(-D_REENTRANT)
 put this code in your CmakeLists.txt
 ```
 LINK_DIRECTORIES(/usr/local/lib)
-INCLUDE_DIRECTORIES(/usr/include/SDL2)
+INCLUDE_DIRECTORIES(/usr/local/include/SDL2)
 TARGET_LINK_LIBRARIES(project m SDL2 SDL2_gfx)
 ADD_DEFINITIONS(-D_REENTRANT)
 ```
