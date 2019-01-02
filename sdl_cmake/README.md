@@ -1,4 +1,4 @@
-م# Prerequisites
+# Prerequisites
 ## Linux
 run this command in terminal:
 ```
